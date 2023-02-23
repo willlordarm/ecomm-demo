@@ -10,7 +10,10 @@
 <style>
 * {
   box-sizing: border-box;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  color: #333e48
 }
+
 
 .columns {
   float: left;
@@ -20,7 +23,7 @@
 
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  border: 1px solid #e5eceb;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -32,25 +35,26 @@
 }
 
 .price .header {
-  background-color: #111;
+  background-color: #333e48;
   color: white;
   font-size: 25px;
 }
 
 .price li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5eceb;
   padding: 20px;
   text-align: center;
 }
 
 .price .grey {
-  background-color: #eee;
+  background-color: #e5eceb;
   font-size: 20px;
 }
 
-.button {
-  background-color: #04AA6D;
+.button, .paddle_button {
+  background-color: #ffc700;
   border: none;
+  border-radius: 20px;
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -67,12 +71,12 @@
 </head>
 <body>
 
-<h2 style="text-align:center">Responsive Pricing Tables</h2>
+<h1 style="text-align:center">Select your product</h1>
 <p style="text-align:center">Resize the browser window to see the effect.</p>
 
 <div class="columns">
   <ul class="price">
-    <li class="header">Basic</li>
+    <li class="header">1 Year Term</li>
     <li class="grey">$ 9.99 / year</li>
     <li>10GB Storage</li>
     <li>10 Emails</li>
@@ -84,7 +88,7 @@
 
 <div class="columns">
   <ul class="price">
-    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="header" style="background-color:#00c1de">Annual subscription</li>
     <li class="grey">$ 24.99 / year</li>
     <li>25GB Storage</li>
     <li>25 Emails</li>
@@ -96,7 +100,7 @@
 
 <div class="columns">
   <ul class="price">
-    <li class="header">Premium</li>
+    <li class="header">Monthly subscription</li>
     <li class="grey">$ 49.99 / year</li>
     <li>50GB Storage</li>
     <li>50 Emails</li>
